@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaieny Coutinho - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
+    <style>
+        :root {
+            --burgundy: #8b2942;
+            --burgundy-light: #a8385d;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-section p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        
+        .btn-custom {
+            background-color: white;
+            color: var(--burgundy);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .btn-custom:hover {
+            background-color: #ffe6ed;
+            color: var(--burgundy);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            color: var(--burgundy);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--burgundy-light);
+            padding-bottom: 10px;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(139, 41, 66, 0.15);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-title {
+            color: var(--burgundy);
+            font-weight: bold;
+        }
+        
+        .skills-badge {
+            background-color: var(--burgundy);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .navbar {
+            background-color: var(--burgundy) !important;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .nav-link:hover {
+            color: #ffe6ed !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jaieny Coutinho</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Jaieny Coutinho</h1>
+            <p>Economics Student | Data Analyst | Process Improvement Specialist</p>
+            <p class="lead">Transforming data into actionable insights</p>
+            <a href="Pages/resume.html" class="btn btn-custom me-3">View Resume</a>
+            <a href="#about" class="btn btn-custom">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4">
+                    <img src="Images/me.jpg" alt="Jaieny Coutinho" class="img-fluid rounded-circle shadow" style="max-width: 300px; border: 5px solid var(--burgundy);">
+                </div>
+                <div class="col-lg-8">
+                    <p class="lead">Hello! I'm Jaieny, an Economics major at Brigham Young University with a passion for data analysis and process optimization.</p>
+                    <p>I specialize in leveraging tools like Excel, SQL, and Stata to streamline operations and drive data-driven decision-making. My experience spans from engineering career services to consulting, where I've consistently improved efficiency and accuracy.</p>
+                    <p>When I'm not analyzing data, you'll find me enjoying Brazilian music, practicing Latin dancing, or volunteering at my local food pantry. I'm fluent in Portuguese and love connecting with diverse cultures.</p>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Quick Facts</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>🎓 Education:</strong> BYU - Economics (GPA 3.57)</li>
+                                <li><strong>📍 Location:</strong> Provo, Utah</li>
+                                <li><strong>💼 Current Role:</strong> Engineering Career Specialist</li>
+                                <li><strong>🌎 Languages:</strong> English, Portuguese (Fluent)</li>
+                                <li><strong>🎯 Interests:</strong> Data Analysis, Process Improvement, International Travel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Experience Highlights</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">BYU - Fulton College of Engineering</h5>
+                            <p class="text-muted">Engineering Career and Recruitment Specialist</p>
+                            <p class="text-muted"><small>Apr 2025 - Present</small></p>
+                            <ul>
+                                <li>Automated Excel dashboards with VBA, cutting reporting time by 60%</li>
+                                <li>Centralized employer outreach through Teams-based system</li>
+                                <li>Consolidated 10+ years of alumni records into unified database</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Adapt Consulting LLC</h5>
+                            <p class="text-muted">Operations & Data Management Specialist</p>
+                            <p class="text-muted"><small>Jan 2025 - Apr 2025</small></p>
+                            <ul>
+                                <li>Increased intranet adoption from 33% to 100%</li>
+                                <li>Cut navigation time by 50% with workflow optimization</li>
+                                <li>Liaison between team and CEO for project alignment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">BYU - Liberal Arts Advisement</h5>
+                            <p class="text-muted">Undergraduate Specialist</p>
+                            <p class="text-muted"><small>Jul 2024 - Sep 2025</small></p>
+                            <ul>
+                                <li>Advised students on academic planning</li>
+                                <li>Trained three new staff members</li>
+                                <li>Supported 6,000+ students with scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PROFI - Financial Company</h5>
+                            <p class="text-muted">Economic Research Intern</p>
+                            <p class="text-muted"><small>Jun 2024 - Sep 2024</small></p>
+                            <ul>
+                                <li>Conducted due diligence for $2M+ business valuation</li>
+                                <li>Implemented verification processes during CRM migration</li>
+                                <li>Prepared data-driven presentations for executives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Skills & Tools</h2>
+            <div class="text-center">
+                <span class="skills-badge">Excel (VBA)</span>
+                <span class="skills-badge">SQL</span>
+                <span class="skills-badge">Stata</span>
+                <span class="skills-badge">Data Analysis</span>
+                <span class="skills-badge">SharePoint</span>
+                <span class="skills-badge">Teams</span>
+                <span class="skills-badge">Process Improvement</span>
+                <span class="skills-badge">Microsoft Office</span>
+                <span class="skills-badge">Portuguese</span>
+                <span class="skills-badge">Data Visualization</span>
+                <span class="skills-badge">Project Management</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Want to Learn More?</h2>
+            <p class="lead">Check out my detailed resume or explore my interests</p>
+            <a href="Pages/resume.html" class="btn btn-custom me-3">View Full Resume</a>
+            <a href="Pages/scratch.html" class="btn btn-custom">My Interests & Projects</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Jaieny Coutinho. All rights reserved.</p>
+            
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
